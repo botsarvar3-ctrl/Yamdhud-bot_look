@@ -1,8 +1,8 @@
-from flask import Flask, request, render_template_string, session, redirect, url_for
+from flask import Flask, request, render_template
 import datetime
+import os
 
 app = Flask(__name__)
-
 # ---------------------------
 # --- CONFIGURE HERE ------
 # ---------------------------
