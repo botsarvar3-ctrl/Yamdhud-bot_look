@@ -1,14 +1,13 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, render_template_string, session, redirect, url_for
 import datetime
 import os
 
 app = Flask(__name__)
-# ---------------------------
-# --- CONFIGURE HERE ------
-# ---------------------------
+
+# ----- CONFIGURE HERE -----
 ADMIN_USER = "H455AN"
 ADMIN_PASS = "HASSAN-0.1"
-app.secret_key = "change_this_to_a_random_secret"
+app.secret_key = "change_this_to_a_random_secret_key"
 
 # --- Logs ---
 log_output = []
